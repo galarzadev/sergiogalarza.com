@@ -28,44 +28,79 @@
     </div>
   </header>
   
-  <main id="main">
-
+  <main id="main" class="row flex">
 
 <!-- hero/sergio-->
-    <hero id="hero" class="container row m-auto">
-      <div class="col tex-center">
+    <hero id="hero" class="container m-auto col-12 order-1 col-md-12 order-md-1 col-lg-6 order-lg-2">
+      <div class="tex-center">
         <figure>
           <img src="./assets/img/foto.jpg" alt="Sergio">
         </figure>
       </div>
-
-      <div class="col tex-center">
+      <div class="tex-center">
         <h1>
           Sergio Galarza, Developer
         </h1>
       </div>
     </hero>
 
-<!-- framework/interactive -->
-    <div id="fi" class="col-12 container">
-
+    
+    <!-- proyects -->
+    <div class="eldiv container-fluid m-auto col-12 order-3 col-md-6 order-md-2 col-lg-12 order-lg-4">
+      <div id="projects" class="projects squares container col-12 m-auto order-3 order-lg-4">
+        
+        <div class="project">
+          Hey! I'm still woring on my page, projects and contact.
+        </div>
+        
+        <div class="project card">
+          <img src="./assets/img/sudoku.png" class="card-img-top my-card-img rounded mx-auto d-block mt-2 mb-0" alt="Sudoku, windowed">
+          <div class="card-body p-1 ps-3">
+            <h5 class="card-title m-1">Console Sudoku</h5>
+            <p class="card-text m-1">2011 C++</p>
+            <a href="#" class="btn btn-secondary">Repository</a>
+          </div> 
+        </div>
+        
+        <div class="project">
+          project 1
+        </div>
+        <div class="project">
+          project 1
+        </div>
+        <div class="project">
+          project 1
+        </div>
+        <div class="project">
+          project 1
+        </div>
+        <div class="project">
+          project 1
+        </div>
+        <div class="project">
+          project 1
+        </div>
+        <div class="project">
+          project zdfg
+        </div>
+        
+      </div>
     </div>
 
-<!-- proyects -->
-    <div id="projects" class="col-12 container">
-      Hey! I'm still woring on my page, projects and contact.
-      <p>sdfsdf</p>
-      <p>sdfsdf</p>
-      <p>sdfsdf</p>
-      <p>sdfsdf</p>
-      <p>sdfsdf</p>
-      <p>sdfsdf</p>
-      <p>sdfsdf</p>
 
-    </div>
+    <!-- <div class="container col-md-6 order-md-3"> -->
 
-<!-- social -->
-    <div class="col-12 container">
+    <!-- framework/interactive -->
+        <div id="fi" class="container m-auto col-12 order-2 col-md-6 order-md-3 col-lg-3 order-lg-1">
+          <p>--------------</p>
+          <p>----------</p>
+          <p>----------</p>
+          <p>----------</p>
+        </div>
+
+    <!-- social -->
+    <div id="social" class="container m-auto col-12 order-4 col-md-6 order-md-4 col-lg-3 order-lg-3">
+      <h3>Twitter</h3>
       <div id="twitter" class="col-10">
         <a class="twitter-timeline" data-height="5000px" data-width="1320px" data-tweet-limit="10" data-theme="dark" href="https://twitter.com/sagalarzal?ref_src=twsrc%5Etfw">Tweets by Sergio</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
@@ -84,10 +119,13 @@
         </li>
       </ul>
     </div>
+
+
+
   </main>
 
 <!-- footer -->
-  <footer id="footer">
+  <footer id="footer" class="footer">
     sergiogalarza.com - 2021
     <a href="https://sergiogalarza.com/blog/" target="_blank">My Random Blog</a>
   </footer>
