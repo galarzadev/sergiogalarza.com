@@ -1,0 +1,215 @@
+:root {
+  /*colores*/
+  --mydarkblack: #0F141A;
+  --mygrey: #7F8C9A;
+  --myblack: #141b22;
+  --mylightblack: #1B242C;
+  --white: #fff;
+}
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+html {
+  /* font-size: 62.5%; Bootstrap already did it*/
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+}
+
+  /*COLORS!*/
+body {
+  background-color: var(--myblack); color: var(--mygrey)
+}
+#header {
+background-color:var(--mylightblack);
+}
+#footer {
+  background-color:var(--mydarkblack);
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--white);
+}
+p {
+  color: var(--mygrey);
+}
+
+.btn-mypurle{
+  background-color: #9e72d8;
+}
+.btn-mySQL{
+  /* background: rgb(242,146,33);
+  background: linear-gradient(90deg, rgb(242,146,33) 0%, rgb(242,146,33) 40%, rgb(0,117,143,1) 60%, rgba(0,117,143,1) 100%);; */
+  background: rgb(242,146,33);
+background: linear-gradient(90deg, rgba(242,146,33,1) 0%, rgba(255,230,201,1) 40%, rgba(195,244,255,1) 60%, rgba(0,117,143,1) 100%);
+}
+.btn-myPython{
+  /* background: rgb(48,105,152);
+  background: linear-gradient(90deg, rgba(48,105,152,1) 0%, rgba(48,105,152,1) 40%, rgba(255,212,59,1) 60%, rgba(255,212,59,1) 100%); */
+  background: rgb(48,105,152);
+background: linear-gradient(90deg, rgba(48,105,152,1) 0%, rgba(182,222,255,1) 40%, rgba(255,238,178,1) 60%, rgba(255,212,59,1) 100%);
+}
+.btn-myorange {
+  background-color: #F1502F;
+}
+.btn-myBootstrap {
+  background-color: #563d7c ;
+}
+.btn {
+  margin: 2px;
+}
+
+.mynavbar {
+  text-align-last: end;
+}
+
+#logo {
+  height: 5vh;
+  width: auto;
+  max-height: 10vw;
+  margin: 2.5vh;
+}
+
+.container, .squares > div {
+  background: var(--mylightblack);
+  margin: 0.5vh;
+  /* border: 1px solid red; */
+  border-radius: 1vh;
+}
+.container {
+  margin: 20px;
+}
+
+#twitter {
+  height: 50vh;
+  overflow: auto;
+  margin: auto;
+}
+
+.my-card-img {
+  height: 60%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.squares > div {
+  border: var(--mygrey) solid 1px;
+  /* border-radius: 1vh; */
+}
+
+
+@media (min-width: 768px) {
+  #header {
+    height: 10vh;
+  }
+  #hero{
+    height: 40vh;
+  }
+
+  #fi, #social {
+    height: 40vh;
+    /* border: 5px solid yellow; */
+    position: absolute;
+    display: block;
+    top: 55vh;
+    left: 50vw; 
+  }
+  #social {
+    top: 95vh;
+  }
+  #twitter {
+    height: 30vh;
+  }
+  .projects {
+    height: 80vh;
+    width: 50vw;
+    position: absolute;
+    display: block;
+    top: 55vh;
+    left: 0vw; 
+  }
+
+}
+@media (min-width: 992px) {
+  
+  main {
+    display: flex;
+  }
+  #hero, #fi, #social, .projects {
+    position: initial;
+    /* display: flexbox; */
+    flex-wrap: wrap;
+  }
+  #header {
+    height: 10vh;
+  }
+  #footer {
+    height: 5vh;
+  }
+  
+  .spacer{
+    height: 2.5vh;
+  }
+
+  #fi, #hero, #social {
+    height: 40vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+  
+  ::-webkit-scrollbar-button {
+    width: 1px;
+    height: 1px;
+  }
+  .eldiv {
+    height: 33vh;
+    /* border: 5px solid yellow; */
+    position: absolute;
+    display: block;
+    top: 55vh;
+    left: -0.5vh; 
+  
+  }
+  .projects {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0; 
+    width: 33vh;
+    height: 100vw;
+    margin: 0;
+    padding-top: 1px;
+    /* background: var(--mylightblack) */
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-33vh);
+    transform-origin: right top;
+  }
+  .projects > div {
+    display: block;
+    transform: rotate(90deg);
+    transform-origin: right top;
+  }
+  
+  .squares {
+    /* padding: 33vh 0 0 0; */
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .squares > div {
+    /* margin: 0; */
+    transform:translateY(33vh) rotate(90deg);
+    width: 32vh;
+    height: 32vh;
+    /* padding: 4vh; */
+    /* margin: 0 auto; */
+  }
+
+  #twitter {
+  height: 30vh;
+  }
+}
