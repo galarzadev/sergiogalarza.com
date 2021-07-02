@@ -94,12 +94,18 @@ background: linear-gradient(90deg, rgba(48,105,152,1) 0%, rgba(182,222,255,1) 40
 }
 
 .my-card-img{
-  height: 60%;
+  height: 85%;
+  align-self: center;
   width: auto;
   max-width: 80%;
+  height: auto;
+  /* max-width: 80%; */
   margin: 0 auto;
+  margin-top: 5%;
 }
-
+.eldiv > .projects > .project > .card-body > p {
+  margin-bottom: 0.2rem;
+}
 .squares > div {
   border: var(--mygrey) solid 1px;
 }
@@ -258,6 +264,61 @@ margin: auto;
     width: 32vh;
     height: 32vh;
   }
+
+  .project-image-container {
+    height: 70%;
+    padding-top: 5%;
+  }
+  .my-card-img{
+    margin-top: 0%;
+    height: 100%;
+  }
+  .eldiv > .projects > .project > .card-body {
+    /* color: red; */
+    height: 30%;
+    /* font-size: 90%; */
+  }
+
+  .eldiv > .projects > .project > .card-body > h3 {
+    /* color: red; */
+    height: 33%;
+    /* line-height: 100%; */
+    margin: 0 auto;
+    font-size: 2.5vh;
+    /* font-size: 90%; */
+  }
+  .eldiv > .projects > .project > .card-body > p {
+    /* color: red; */
+    height: 25%;
+    margin: 0 auto;
+    font-size: 1.2vh;
+  }
+  .eldiv > .projects > .project > .card-body > a {
+    /* color: red; */
+    /* position: static;
+    display: table; */
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.8vh;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #projects-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: red;
+    background-color: #0e1eaf; */
+  }
+  #projects-title >div > h3 {
+    height: 25%;
+    margin: 0 auto;
+    font-size: 4vh;
+  }
+
 
   #twitter {
   height: 30vh;
